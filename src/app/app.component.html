@@ -1,0 +1,20 @@
+<div class="container">
+  <h1 class="heading">Wochenstunden Laufendes Jahr</h1>
+<table class="table ">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Woche 1</th>
+    <th>Woche 2</th>
+    <th>Woche 3</th>
+    <th>Woche 4</th>
+  </tr>
+  </thead>
+  <tbody> 
+    <tr *ngFor = "let line of lines">
+        <td >{{line.monat}}</td>
+        <td  *ngFor = "let woche of line.wochen">{{woche}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
